@@ -3,9 +3,9 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <section className="bg-gray-950 text-gray-300 px-8 py-24">
+    <section className="px-6 sm:px-8 py-24 bg-gray-50 dark:bg-gray-950">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12">
           Projects
         </h2>
 

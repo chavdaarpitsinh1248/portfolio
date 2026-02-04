@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-400 px-8 py-6">
+    <footer className="px-6 sm:px-8 py-6 bg-gray-50 dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-        <p>
+        <p className="text-gray-600 dark:text-gray-400">
           © {new Date().getFullYear()} Arpit. All rights reserved.
         </p>
 
@@ -11,15 +11,16 @@ function Footer() {
             href="https://github.com/chavdaarpitsinh1248"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-white"
+            className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             GitHub
           </a>
+
           <a
-            href="www.linkedin.com/in/chavda-arpitsinh"
+            href="https://www.linkedin.com/in/chavda-arpitsinh"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-white"
+            className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             LinkedIn
           </a>
