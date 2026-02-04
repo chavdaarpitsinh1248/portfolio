@@ -11,6 +11,9 @@ import {
   SiTailwindcss,
   SiPostgresql,
   SiMysql,
+  SiGit,
+  SiGithub,
+  SiLinux,
 } from "react-icons/si";
 
 import { DiDatabase } from "react-icons/di";
@@ -29,6 +32,9 @@ const techIcons = {
   PostgreSQL: SiPostgresql,
   MySQL: SiMysql,
   SQL: DiDatabase,
+  Git: SiGit,
+  GitHub: SiGithub,
+  Linux: SiLinux,
 };
 
 export default techIcons;
