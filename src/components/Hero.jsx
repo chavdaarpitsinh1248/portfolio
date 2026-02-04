@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="min-h-screen flex items-center bg-gray-900 text-white px-8">
+    <section className="min-h-screen flex items-center bg-gray-900 text-white px-6 sm:px-8">
       <div className="max-w-4xl">
         <p className="text-blue-400 text-lg mb-4">
           Hi, my name is
@@ -20,7 +20,7 @@ function Hero() {
           development with React.
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="/projects"
             className="px-6 py-3 border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black transition"

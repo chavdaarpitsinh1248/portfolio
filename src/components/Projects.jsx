@@ -9,7 +9,7 @@ function Projects() {
           Projects
         </h2>
 
-        <div className="grid sm:grid-cols-2 gap-8">
+        <div className="grid gap-8 sm:grid-cols-2">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

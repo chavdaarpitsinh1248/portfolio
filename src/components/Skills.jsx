@@ -6,7 +6,7 @@ function Skills() {
           Skills
         </h2>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
           {/* Languages */}
           <div className="bg-gray-800 p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-white mb-4">
