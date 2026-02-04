@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FiSun, FiMoon } from "react-icons/fi";
 import useTheme from "../hooks/useTheme";
 
@@ -14,14 +14,27 @@ function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between">
-        {/* Left: Brand */}
-        <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-          Arpit
-        </h1>
+      <div className="w-full px-6 sm:px-8 py-4 grid grid-cols-3 items-center">
+        
+        {/* LEFT: Brand */}
+        <div className="justify-self-start">
+          <Link
+            to="/"
+            className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            Arpit
+          </Link>
+        </div>
 
-        {/* Right: Nav links + theme toggle */}
-        <div className="flex items-center gap-6">
+        {/* CENTER: Role */}
+        <div className="justify-self-center">
+          <span className="text-sm sm:text-base font-large text-gray-600 dark:text-gray-400">
+            Python Developer
+          </span>
+        </div>
+
+        {/* RIGHT: Nav links + theme toggle */}
+        <div className="justify-self-end flex items-center gap-6">
           <NavLink to="/" className={linkClass}>
             Home
           </NavLink>
@@ -32,7 +45,6 @@ function Navbar() {
             Contact
           </NavLink>
 
-          {/* Theme Toggle Icon */}
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
