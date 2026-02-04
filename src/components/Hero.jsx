@@ -1,7 +1,16 @@
+import { motion } from "framer-motion";
+
+
 function Hero() {
   return (
     <section className="min-h-screen flex items-center bg-gray-900 text-white px-6 sm:px-8">
-      <div className="max-w-4xl">
+      <motion.div
+        className="max-w-4xl"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+
         <p className="text-blue-400 text-lg mb-4">
           Hi, my name is
         </p>
@@ -35,7 +44,7 @@ function Hero() {
             Contact Me
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

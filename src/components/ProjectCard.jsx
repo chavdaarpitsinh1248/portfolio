@@ -1,6 +1,14 @@
+import { motion } from "framer-motion";
+
+
 function ProjectCard({ project }) {
   return (
-    <div className="bg-gray-800 p-6 rounded-lg flex flex-col justify-between">
+    <motion.div
+        className="bg-gray-800 p-6 rounded-lg flex flex-col justify-between"
+        whileHover={{ y: -4 }}
+        transition={{ type: "spring", stiffness: 300 }}
+    >
+
       <div>
         <h3 className="text-xl font-semibold text-white mb-3">
           {project.title}
@@ -43,7 +51,7 @@ function ProjectCard({ project }) {
           </a>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
