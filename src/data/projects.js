@@ -66,6 +66,31 @@ const projects = [
   github: "https://github.com/chavdaarpitsinh1248/budgetIQ---Django",
   demo: ""
 },
+{
+  title: "URL Shortener",
+  type: "backend",
+  description:
+    "A production-ready URL Shortener service similar to bit.ly that converts long URLs into short, shareable links and redirects users while tracking click analytics.",
+  highlights: [
+    "Short URL generation using Base62 encoding of database IDs",
+    "Collision-free and deterministic short code generation",
+    "HTTP redirection with click count tracking",
+    "Input URL validation and duplicate URL handling",
+    "REST API support alongside a simple HTML frontend",
+    "Clean backend architecture with refactored service and data layers",
+    "Deployed in production using Gunicorn"
+  ],
+  tech: [
+    "Python",
+    "Flask",
+    "SQLite",
+    "Gunicorn",
+    "HTML",
+    "CSS"
+  ],
+  github: "https://github.com/chavdaarpitsinh1248/url-shortener",
+  demo: "https://url-shortener-0i16.onrender.com/"
+},
 
 ];
 
