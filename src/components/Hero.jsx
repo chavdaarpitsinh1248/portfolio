@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FiDownload } from "react-icons/fi";
 
 function Hero() {
   return (
@@ -27,7 +28,9 @@ function Hero() {
           development with React.
         </p>
 
+        {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4">
+          {/* View Projects */}
           <a
             href="/projects"
             className="px-6 py-3 border border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-black transition"
@@ -35,11 +38,14 @@ function Hero() {
             View Projects
           </a>
 
+          {/* Download Resume */}
           <a
-            href="/contact"
-            className="px-6 py-3 border border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+            href="/resume.pdf"
+            download
+            className="inline-flex items-center gap-2 px-6 py-3 border border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
           >
-            Contact Me
+            <FiDownload />
+            Download Resume
           </a>
         </div>
       </motion.div>
