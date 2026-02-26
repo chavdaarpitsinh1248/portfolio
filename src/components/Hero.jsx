@@ -23,9 +23,7 @@ function Hero() {
         </h2>
 
         <p className="text-gray-600 dark:text-gray-400 max-w-xl mb-8">
-          I’m a Python-focused developer with experience in Machine Learning,
-          backend development using Django, FastAPI & Flask, and modern frontend
-          development with React.
+          Python Developer building scalable backend systems and machine learning solutions. Experienced in FastAPI, Django, and React, with a strong focus on clean architecture, data-driven applications, and production-ready code.
         </p>
 
         {/* Buttons */}
